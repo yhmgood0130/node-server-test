@@ -1,0 +1,30 @@
+{
+  "name": "server-side-with-python3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yhmgood0130/server-side-with-python3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yhmgood0130/server-side-with-python3/issues"
+  },
+  "homepage": "https://github.com/yhmgood0130/server-side-with-python3#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "cors": "^2.8.4",
+    "dotnet": "^1.1.4",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "knex": "^0.14.2",
+    "mysql": "^2.15.0"
+  }
+}
