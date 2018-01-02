@@ -1,5 +1,7 @@
 const express = require('express');
+const cors = require('cors');
 const bodyParser = require('body-parser');
+const logs = require('./routes/logs');
 const port = process.env.PORT || 8888;
 
 const app = express();
@@ -14,6 +16,7 @@ app.use(function(req, res, next) {
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use('/',logs);
 
 app.listen(port);
 

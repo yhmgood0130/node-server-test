@@ -1,11 +1,16 @@
 module.exports = {
   development: {
-    client: pg,
-    connection: 'postgres://localhost/logentry'
+    client: 'mysql',
+    connection: {
+      host: 'localhost',
+      user: 'root',
+      password: 'ballack13',
+      database: 'logentries'
+  }
   },
 
   production: {
-    client: 'pg',
+    client: 'mysql',
     connection: process.env.DATABASE_URL
   }
 };

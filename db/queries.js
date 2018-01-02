@@ -1,7 +1,10 @@
-const knex = require('knex');
+const knex = require('./knex');
 
 module.exports = {
-  getLog: function() {
+  getAll: function() {
     return knex('log')
+  },
+  showLog: function(id){
+    return knex('log').select().where('id',id)
   }
 }
